@@ -119,8 +119,6 @@ background-image: url("../images/people_office.jpg");
 background-size: cover;
 background-repeat: no-repeat; 
 background-position: center;
-/* linear-gradient: rgba(46, 47, 66, 0.7); */
-
 }
 .main::before {
 content: '';
