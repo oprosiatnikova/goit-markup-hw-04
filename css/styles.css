@@ -115,7 +115,7 @@ position: relative;
 align-items: center;
 height: 600px;
 padding: 188px 0;
-background-image: url("/images/people_office.jpg");
+background-image: url("../images/people_office.jpg");
 background-size: cover;
 background-repeat: no-repeat; 
 background-position: center;
