@@ -239,7 +239,15 @@ overflow: hidden;
     letter-spacing: 0.02em;
     margin: 0;
     display: flex;
-}
+    }
+    .icons-studio {
+border: 1px solid #8e8f99;
+border-radius: 4px;
+max-width: 264px;
+/* height: 112px; */
+background: #f4f4fd;
+    }
+
 .our-team {
     background-color: #F4F4FD;
     padding: 120px 0;
