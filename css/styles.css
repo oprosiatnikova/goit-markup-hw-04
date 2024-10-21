@@ -119,6 +119,7 @@ background-image: url("../images/people_office.jpg");
 background-size: cover;
 background-repeat: no-repeat; 
 background-position: center;
+
 }
 .main::before {
 content: '';
@@ -127,7 +128,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)); /* Градієнт */
+background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)); Градієнт
 z-index: 1;
 }
 .social-icons {
@@ -142,6 +143,7 @@ z-index: 1;
     align-items: center;
     z-index: 2;
     position: relative;
+   
           }
           .start {
                max-width: 525px;
@@ -244,7 +246,7 @@ overflow: hidden;
 border: 1px solid #8e8f99;
 border-radius: 4px;
 max-width: 264px;
-/* height: 112px; */
+height: 112px; 
 background: #f4f4fd;
     }
 
