@@ -119,6 +119,8 @@ background-image: url("../images/people_office.jpg");
 background-size: cover;
 background-repeat: no-repeat; 
 background-position: center;
+max-width: 1440px; 
+
 
 }
 .main::before {
@@ -177,6 +179,8 @@ z-index: 1;
                         font-weight: 500;
                         cursor: pointer;
                         justify-content: space-around;
+                        background-color: 250ms;
+                        cubic-bezier: (0.4, 0, 0.2, 1);
             }
     .press:hover {
     background-color: #404BBF;
@@ -226,11 +230,11 @@ overflow: hidden;
     margin-bottom: 8px;
     color: #2E2F42;
     font-size: 20px;
-    text-align: left;
+    /* text-align: left; */
     line-height: 1.2;
     letter-spacing: 0.02em;
     font-weight: 500;
-    text-align: left; 
+   
     
 }
 .content {
@@ -248,6 +252,11 @@ border-radius: 4px;
 max-width: 264px;
 height: 112px; 
 background: #f4f4fd;
+box-shadow:  
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+}			
+
+
     }
 
 .our-team {
