@@ -34,7 +34,14 @@ padding: 0;
 /* header */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-}
+      
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+}			
+
+      
+		
+
+
       .header-container {
         display: flex;
         align-items: center;
@@ -47,6 +54,7 @@ padding: 0;
     .header-nav {
     display: flex;
     align-items: center;
+    /* gap: 40; */
     }
     .nav-list {
     display: flex;
@@ -71,11 +79,12 @@ padding: 0;
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: #2e2f42;
+             transition: color 250ms cobic-bezier(0.4, 0, 0.2, 1);
         }
 
 .nav-link {
     display: block;
-    align-items: center;
+    /* align-items: center; */
     padding: 24px 0;
     color: #2e2f42;
     font-size: 16px;
@@ -83,12 +92,27 @@ padding: 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-style: normal;
+    transition: color 250ms cobic-bezier(0.4, 0, 0.2, 1);
 }
+.nav-link.current {
+    position: relative;
+}
+.nav-link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    }
 
 .nav-link:hover,
 .nav-link:focus 
 .contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:focus,
+.nav-link.current {
 color: #404bbf;
 }
 
@@ -112,25 +136,36 @@ color: #404bbf;
 
 .main {
 /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);" */
-content: '';
+/* content: '';
  position: absolute; 
-position: relative; 
- align-items: center; 
-height: 600px;
-padding: 188px 0;
+position: relative;  */
+ /* align-items: center;  */
+/* height: 600px;
+padding: 188px 0; */
  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-background-image: url("../images/people_office.jpg"); 
-background-size: cover;
-background-repeat: no-repeat; 
-background-position: center;
-max-width: 1440px;
-/* content: '';  */
-/* z-index: 1;  */
+background-image: url("../images/people_office.jpg");  
+/* background-size: cover; */
+/* background-repeat: no-repeat;  */
+/* background-position: center; */
+/* max-width: 1440px; */
+/* content: ''; 
+z-index: 1;  */
 }
-.social-icons-ul {
+ .main-cont {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    z-index: 2;
+    /* position: relative; */
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+   height: 600px;
+padding: 188px 0;
+max-width: 1440;
+          }
 
-}
 
 .social-icons {
     display: flex;
@@ -151,8 +186,10 @@ gap: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     z-index: 2;
     position: relative;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
    
           }
           .start {
@@ -189,6 +226,7 @@ gap: 24px;
                         justify-content: space-around;
                         background-color: 250ms;
                         cubic-bezier: (0.4, 0, 0.2, 1);
+                        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
             }
     .press:hover {
     background-color: #404BBF;
@@ -255,16 +293,40 @@ overflow: hidden;
     display: flex;
     }
     .icons-studio {
+        margin-bottom: 8px; 
         display: flex;
-        align-items: center;
-justify-content: center;       
+        /* align-items: center; */
+        flex-direction: row;
+/* justify-content: center;        */
 border: 1px solid #8e8f99;
 border-radius: 4px;
 max-width: 264px;
 height: 112px; 
 background: #f4f4fd;
 box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
-}			
+
+flex-direction: row;
+gap: 24px;
+}	
+.icons-studio-list {
+    display: flex; 
+    justify-content: center;
+    gap: 24px; 
+    width: 40px;
+    height: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    align-items: center;
+     justify-content: center; 
+}
+.icons-studio-list :hover {
+     background-color: #404bbf;
+}
+.icons-studio-list :focus {
+    background-color: #404bbf;
+}		
 
 .our-team {
     background-color: #F4F4FD;
