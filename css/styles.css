@@ -137,38 +137,19 @@ color: #404bbf;
 /*section1*/
 
 .main {
-/* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);" */
-/* content: '';
- position: absolute; 
-position: relative;  */
- /* align-items: center;  */
-/* height: 600px;
-padding: 188px 0; */
- background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-background-image: url("../images/people_office.jpg");  
-/* background-size: cover; */
-/* background-repeat: no-repeat;  */
-/* background-position: center; */
-/* max-width: 1440px; */
-/* content: ''; 
-z-index: 1;  */
+margin: 0 auto;
+padding: 188px 0;
+max-width: 1440px;
+ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);"
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
  .main-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;  
-    z-index: 2;
-    /* position: relative; */
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
-   height: 600px;
-padding: 188px 0;
-max-width: 1440;
-          }
-
-
+  }
 .social-icons {
     display: flex;
 align-items: center;
@@ -184,19 +165,6 @@ justify-content: center;
 flex-direction: row;
 gap: 24px;
 } 
-/* .social-icons-list {
- display: flex;   
-}    */
- .main-cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    z-index: 2;
-    position: relative;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
-   
-          }
           .start {
                max-width: 525px;
                     color: #FFF;
@@ -257,8 +225,6 @@ overflow: hidden;
 .studio-list {
     display: flex;
     gap: 24px;
-    /* margin-right: 24px; */
-    /* flex-basis: calc((100% - 3 * 24px) / 4); */
 }
 .studio-item {
     margin-right: 0;
@@ -281,13 +247,10 @@ overflow: hidden;
     margin-bottom: 8px;
     color: #2E2F42;
     font-size: 20px;
-    /* text-align: left; */
     line-height: 1.2;
     letter-spacing: 0.02em;
     font-weight: 500;
-   
-    
-}
+    }
 .content {
     color: #434455;
     font-size: 16px;
@@ -301,7 +264,6 @@ overflow: hidden;
         margin-bottom: 8px; 
         display: flex;
         align-items: center;
-        /* flex-direction: row; */
 justify-content: center;       
 border: 1px solid #8e8f99;
 border-radius: 4px;
@@ -309,8 +271,6 @@ max-width: 264px;
 height: 112px; 
 background: #f4f4fd;
 box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
-
-/* flex-direction: row; */
 gap: 24px;
 }	
 .icons-studio-list {
@@ -332,7 +292,11 @@ gap: 24px;
 .icons-studio-list :focus {
     background-color: #404bbf;
 }		
-
+.container-our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .our-team {
     background-color: #F4F4FD;
     padding: 120px 0;
@@ -343,6 +307,33 @@ gap: 24px;
     }
 .list-item-cont {
      padding: 32px 0;
+}
+.team-social-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+.social-icons {
+    width: 40px;
+    height: 40px;
+}
+.social-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+}
+.social-icons :hover {
+    background-color:#404bbf;
+}
+.social-icons :focus {
+background-color:#404bbf;    
+}
+.social-networks {
+    fill: #F4F4FD;
 }
 
 .chapter {
@@ -394,11 +385,7 @@ text-align: center;
         display: flex;
             align-items: flex-start;
             justify-content: flex-start;
-            /*flex-direction: column;*/
-            /*gap: 60px;*/
-            
-            
-    }
+           }
     .chapter-portfolio {
         font-weight: 700;
 font-size: 36px;
@@ -506,12 +493,7 @@ li.app {
     display: block;
 }
 
-.container-our-team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-            
+        
 .media {
 margin-bottom: 8px;
 display: inline-block;
